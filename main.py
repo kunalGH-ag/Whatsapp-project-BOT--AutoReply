@@ -14,7 +14,7 @@ def last_message_from_kunal(chat_text: str) -> bool:
     return "kunal" in last_line.split("]")[1]
 
 
-client = genai.Client(api_key = "AIzaSyCecb7RjZT3DMzb3_UAsZI4u8Ahs4hYUwM")
+client = genai.Client(api_key)
 
 # Safety: move mouse to a corner to abort
 #pyautogui.FAILSAFE = True
@@ -81,4 +81,5 @@ while True:
         time.sleep(0.8)
 
         pyautogui.press("enter")
+
         # print(response.text)
